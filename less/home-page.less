@@ -49,14 +49,16 @@
 		border-top: 2px dashed @navigation-border;
 		display: flex;
 		justify-content: space-between;
+		// border: 1px solid red;
 
 		.destination {
 			width: 30%;
 			margin-bottom: 30px;
+			// border: 1px solid red;
 		}
 	}
 	.btn {
-		.custom-btn(#108978, white, 2rem)
+		.custom-btn(#108978, white, 2rem);
 	}
 } // home
 
@@ -67,6 +69,11 @@
 	margin-top: 20px;
 	align-items: center;
 	border-top: 2px dashed @navigation-border;
+
+	@media @mobile {
+		max-width: 500px;
+		width: 90%;
+	}
 }
 
 .welcome-content {
@@ -75,4 +82,9 @@
 	margin: 0 auto;
 	margin-top: 20px;
 	align-items: center;
+
+	@media @mobile {
+		max-width: 500px;
+		width: 90%;
+	}
 }
