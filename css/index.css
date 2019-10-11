@@ -204,6 +204,11 @@ img {
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
+@media (max-width: 500px) {
+  .footer {
+    max-width: 500px;
+  }
+}
 .footer p {
   text-align: center;
   color: #212529;
